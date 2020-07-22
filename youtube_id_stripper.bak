@@ -1,0 +1,3 @@
+#!/bin/bash
+#A script to return youtube channel id in stdout
+w3m -dump_source $1 | gunzip -f | grep "itemprop=\"channelId\""
